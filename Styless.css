@@ -14,6 +14,14 @@ p {
     padding: 10px;
 }
 
+.destacado {
+    color: rgb(7, 172, 62) !important;
+}
+
+#Unico {
+    color: rgb(190, 27, 27);
+}
+
 footer {
     margin-top: 20px ;
     text-align: center;
