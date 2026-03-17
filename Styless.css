@@ -118,6 +118,11 @@ footer {
     border-radius: 5px;
 }
 
+.imgmodelo {
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+}
 
 /* .container2 {
    padding: 20px;
