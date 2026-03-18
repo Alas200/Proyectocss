@@ -2,6 +2,8 @@
 
     background-color: #333; /* Un fondo oscuro */
     overflow: hidden; /* Para asegurarnos de que no haya desbordamientos */
+    position: sticky; /* Hace que la barra de navegación sea pegajosa */
+    top: 5px;
     display: flex; /* Alinea los elementos en una fila */
     justify-content: space-around; /* Espacia uniformemente los elementos */
     padding: 1em; /* Espacio alrededor de los elementos */
@@ -12,11 +14,10 @@
 
 .navbar a {
 
-  color: white; /* Enlaces en blanco para que resalten */
-
-  text-decoration: none; /* Quitar el subrayado */
-
-  padding: 0.5em 1em; /* Espacio alrededor de los enlaces */
+    color: white; /* Enlaces en blanco para que resalten */
+    text-decoration: none; /* Quitar el subrayado */
+    padding: 0.5em 1em; /* Espacio alrededor de los enlaces */
+    
 
 }
 
