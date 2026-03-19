@@ -171,10 +171,6 @@ p {
     border-radius: 10px;
 }
 
-
-
-
-
 .main-footer {
   background-color: #0a0a0a;
   color: #ffffff;
@@ -284,3 +280,582 @@ p {
   color: #ccc;
 }
 
+
+
+
+/* Media Query para pantallas de 1024px o menores */
+@media (max-width: 1024px) {
+    
+        
+    /* 1. Ajustes de Base */
+    body {
+        margin: 5px; /* Reducimos margen externo al mínimo */
+        font-size: 14px; /* Bajamos un poco la fuente general */
+        position: center;
+    }
+
+    header {
+        padding: 20px 0; /* Header mucho más delgado */
+    }
+
+    /* 2. Navegación (Navbar) */
+        .navbar {
+
+            background-color: #333; /* Un fondo oscuro */
+            overflow: hidden; /* Para asegurarnos de que no haya desbordamientos */
+            position: sticky; /* Hace que la barra de navegación sea pegajosa */
+            top: 5px;
+            display: flex; /* Alinea los elementos en una fila */
+            justify-content: space-around; /* Espacia uniformemente los elementos */
+            padding: 1em; /* Espacio alrededor de los elementos */
+            border-radius: 10px; /* Bordes redondeados para un diseño más suave */
+            z-index: 1000;          /* Asegura que esté por encima de otros elementos */
+
+        }
+
+        .navbar a {
+
+            color: white; /* Enlaces en blanco para que resalten */
+            text-decoration: none; /* Quitar el subrayado */
+            padding: 0.5em 1em; /* Espacio alrededor de los enlaces */
+            
+
+        }
+        /* 3. Contenedores Flex (Forzar columna única) */
+        
+        
+        
+        .primeraclase {
+            background-color: rgb(255, 255, 255);
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .flex-container{
+            
+            display: flex;
+            justify-content: space-around;
+            justify-items: center;
+            background-color: rgb(6, 6, 6);
+            border-radius: 35px;
+            margin: 3;
+        }
+
+        .flex-container2{
+            
+            display: flex;
+            justify-content: space-around;
+            justify-items: center;
+            background-color: rgb(6, 6, 6);
+            border-radius: 35px;
+
+        }
+        .flex-container3 {
+            
+            display: flex;              /* Activa Flexbox */
+            justify-content: space-around; /* Espacio entre columnas */
+            align-items: center;    /* Alinea las columnas al inicio */  
+            padding: 10px;
+            gap: 2px;
+            border-radius: 35px;
+        }
+    
+        .columna{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 10px;
+            margin-top: 5px;
+            margin: 10px;
+            background-color: rgb(64, 60, 60);
+            border-radius: 15px;
+        }
+        .fondocolumna {
+
+            background-color: rgb(0, 0, 0);
+            border-radius: 15px;
+            padding: 5px;
+            margin-top: 5px;
+
+        }
+
+        /* 5. Imágenes y Títulos */
+        .imagen1
+        {
+            width: 80%; /* Que ocupe todo el ancho del contenedor */
+            height: auto; /* Mantener proporción */
+        } 
+
+        .imgmodelo {
+            width: 250px;
+            height: 270px;
+        }
+        .item1{
+            background-color: rgb(255, 255, 255);
+            border-radius: 15px;
+    
+        }
+        .item2 {
+            
+            background-color: rgb(255, 255, 255);
+            padding: 2px;
+            border-radius: 5px;
+            }
+
+        
+
+        h2 {
+            font-size: 70%;
+        }
+        p{
+            font-size: 70%;
+        }
+
+        /* 6. Newsletter en Móvil */
+    }
+
+
+/* Ajuste específico para la altura (740px) 
+   Si el contenido es muy alto, evitamos que el sticky tape todo */
+@media (max-width: 800px) {
+            
+/* 1. Ajustes de Base */
+    body {
+        margin: 5px; /* Reducimos margen externo al mínimo */
+        font-size: 14px; /* Bajamos un poco la fuente general */
+        position: center;
+    }
+
+    header {
+        padding: 20px 0; /* Header mucho más delgado */
+    }
+
+    /* 2. Navegación (Navbar) */
+        .navbar {
+            flex-direction: column; /* Links uno debajo del otro */
+            align-items: center;
+            gap: 5px;
+            padding: 0.5em;
+            position: static; /* En 704px de alto, el sticky quita mucho espacio */
+        }
+
+        .navbar a {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            padding: 0.3em;
+            width: 100%; /* Botones de ancho completo para facilitar el clic */
+        }
+
+        /* 3. Contenedores Flex (Forzar columna única) */
+        
+        
+        .footer-top,
+        .footer-bottom {
+            display: flex;
+            flex-direction: column; /* Todo en vertical */
+            align-items: center;
+            text-align: center;
+            padding: 15px; /* Menos relleno */
+            gap: 15px;
+            margin: 10px 0;
+            display: flex;              /* Activa Flexbox */
+            flex-wrap: wrap;
+        }
+
+        .flex-container{
+            
+            display: flex;
+            justify-content: space-around;
+            justify-items: center;
+            background-color: rgb(6, 6, 6);
+            border-radius: 35px;
+            margin: 3;
+        }
+        .flex-container2{
+            
+            display: flex;
+            justify-content: space-between;
+            justify-items: center;
+            background-color: rgb(6, 6, 6);
+            border-radius: 35px;
+
+        }
+        .flex-container3 {
+            
+            display: flex;              /* Activa Flexbox */
+            justify-content: space-around; /* Espacio entre columnas */
+            align-items: center;    /* Alinea las columnas al inicio */  
+            padding: 10px;
+            gap: 2px;
+            border-radius: 35px;
+        }
+    
+        .columna{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 5px;
+            margin-top: 5px;
+            margin: 10px;
+            background-color: rgb(64, 60, 60);
+            border-radius: 15px;
+        }
+        .fondocolumna {
+
+            background-color: rgb(0, 0, 0);
+            border-radius: 15px;
+            padding: 5px;
+            margin-top: 5px;
+
+        }
+
+        /* 5. Imágenes y Títulos */
+        .imagen1
+        {
+            width: 80%; /* Que ocupe todo el ancho del contenedor */
+            height: auto; /* Mantener proporción */
+        } 
+
+        .imgmodelo {
+            width: 200px;
+            height: 220px;
+        }
+        .item1{
+            background-color: rgb(255, 255, 255);
+            padding: 15px;
+            border-radius: 15px;
+    
+        }
+        .item2 {
+            
+            background-color: rgb(255, 255, 255);
+            padding: 2px;
+            border-radius: 5px;
+            }
+
+       
+        }
+
+        h2 {
+            font-size: 120%;
+        }
+        p{
+            font-size: 70%;
+        }
+
+        /* 6. Newsletter en Móvil */
+        .LEONS-form input, 
+        .LEONS-form button {
+            width: 100%; /* Inputs a lo ancho de la pantalla */
+        }
+
+        .social-icons {
+            gap: 30px; /* Más espacio entre iconos para que sea fácil tocarlos */
+        }
+    
+
+/* Media Query para móviles pequeños (320px x 704px) */
+@media (max-width: 430px) {
+        
+    /* 1. Ajustes de Base */
+    body {
+        margin: 5px; /* Reducimos margen externo al mínimo */
+        font-size: 14px; /* Bajamos un poco la fuente general */
+        position: center;
+    }
+
+    header {
+        padding: 20px 0; /* Header mucho más delgado */
+    }
+
+    /* 2. Navegación (Navbar) */
+        .navbar {
+            flex-direction: column; /* Links uno debajo del otro */
+            align-items: center;
+            gap: 5px;
+            padding: 0.5em;
+            position: static; /* En 704px de alto, el sticky quita mucho espacio */
+        }
+
+        .navbar a {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            padding: 0.3em;
+            width: 100%; /* Botones de ancho completo para facilitar el clic */
+        }
+
+        /* 3. Contenedores Flex (Forzar columna única) */
+        
+        
+        .footer-top,
+        .footer-bottom {
+            display: flex;
+            flex-direction: column; /* Todo en vertical */
+            align-items: center;
+            text-align: center;
+            padding: 15px; /* Menos relleno */
+            gap: 15px;
+            margin: 10px 0;
+            display: flex;              /* Activa Flexbox */
+            flex-wrap: wrap;
+        }
+
+         .flex-container{
+            
+            display: flex;
+            justify-content: space-around;
+            justify-items: center;
+            background-color: rgb(6, 6, 6);
+            border-radius: 35px;
+        }
+
+        .flex-container2{
+            
+            display: flex;
+            justify-content: space-between;
+            justify-items: center;
+            background-color: rgb(6, 6, 6);
+            border-radius: 35px;
+
+        }
+        .flex-container3 {
+            
+            display: flex;              /* Activa Flexbox */
+            justify-content: space-around; /* Espacio entre columnas */
+            align-items: center;    /* Alinea las columnas al inicio */  
+            padding: 5px;
+            gap: 2px;
+            border-radius: 35px;
+        }
+    
+        .columna{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            padding: 5px;
+            margin-top: 5px;
+            margin: 2px;
+            background-color: rgb(64, 60, 60);
+            border-radius: 15px;
+        }
+        .fondocolumna {
+
+            background-color: rgb(0, 0, 0);
+            border-radius: 15px;
+            padding: 10px;
+            margin-top: 2px;
+
+        }
+        .footer-col {
+            width: 100%; /* Que ocupen todo el ancho disponible */
+            min-width: 0; /* Reseteamos el min-width anterior */
+            margin: 0;
+            padding: 10px;
+        } 
+
+        /* 5. Imágenes y Títulos */
+        .imagen1
+        {
+            width: 80%; /* Que ocupe todo el ancho del contenedor */
+            height: auto; /* Mantener proporción */
+        } 
+
+        .imgmodelo {
+            width: 80px;
+            height: 70px;
+        }
+        .item1{
+            background-color: rgb(255, 255, 255);
+            padding: 5px;
+            border-radius: 15px;
+    
+        }
+        .item2 {
+            
+            background-color: rgb(255, 255, 255);
+            padding: 2px;
+            border-radius: 5px;
+            }
+
+        h1 {
+            font-size: 70%; /* Título más pequeño para que no se corte */
+            padding: 1px;
+        }
+
+        h2 {
+            font-size: 70%;
+        }
+        p{
+            font-size: 70%;
+        }
+
+        /* 6. Newsletter en Móvil */
+        .LEONS-form input, 
+        .LEONS-form button {
+            width: 100%; /* Inputs a lo ancho de la pantalla */
+        }
+
+        .social-icons {
+            gap: 30px; /* Más espacio entre iconos para que sea fácil tocarlos */
+        }
+    }
+
+
+    @media (max-width: 380px) {
+        
+    /* 1. Ajustes de Base */
+    body {
+        margin: 5px; /* Reducimos margen externo al mínimo */
+        font-size: 14px; /* Bajamos un poco la fuente general */
+        position: center;
+    }
+
+    header {
+        padding: 20px 0; /* Header mucho más delgado */
+    }
+
+    /* 2. Navegación (Navbar) */
+        .navbar {
+            flex-direction: column; /* Links uno debajo del otro */
+            align-items: center;
+            gap: 5px;
+            padding: 0.5em;
+            position: static; /* En 704px de alto, el sticky quita mucho espacio */
+        }
+
+        .navbar a {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            padding: 0.3em;
+            width: 100%; /* Botones de ancho completo para facilitar el clic */
+        }
+
+        /* 3. Contenedores Flex (Forzar columna única) */
+        
+        
+        .footer-top,
+        .footer-bottom {
+            display: flex;
+            flex-direction: column; /* Todo en vertical */
+            align-items: center;
+            text-align: center;
+            padding: 15px; /* Menos relleno */
+            gap: 15px;
+            margin: 10px 0;
+            display: flex;              /* Activa Flexbox */
+            flex-wrap: wrap;
+        }
+
+         .flex-container{
+            
+            display: flex;
+            justify-content: space-around;
+            justify-items: center;
+            background-color: rgb(6, 6, 6);
+            border-radius: 35px;
+        }
+
+        .flex-container2{
+            
+            display: flex;
+            justify-content: space-between;
+            justify-items: center;
+            background-color: rgb(6, 6, 6);
+            border-radius: 35px;
+
+        }
+        .flex-container3 {
+            
+            display: flex;              /* Activa Flexbox */
+            justify-content: space-around; /* Espacio entre columnas */
+            align-items: center;    /* Alinea las columnas al inicio */  
+            padding: 10px;
+            border-radius: 35px;
+        }
+    
+        .columna{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            padding: 10px;
+            margin-top: 5px;
+            margin: 5px;
+            background-color: rgb(64, 60, 60);
+            border-radius: 15px;
+        }
+        .fondocolumna {
+
+            background-color: rgb(0, 0, 0);
+            border-radius: 15px;
+            padding: 5px;
+            margin-top: 5px;
+
+        }
+        .footer-col {
+            width: 100%; /* Que ocupen todo el ancho disponible */
+            min-width: 0; /* Reseteamos el min-width anterior */
+            margin: 0;
+            padding: 10px;
+        } 
+
+        /* 5. Imágenes y Títulos */
+        .imagen1
+        {
+            width: 80%; /* Que ocupe todo el ancho del contenedor */
+            height: auto; /* Mantener proporción */
+        } 
+
+        .imgmodelo {
+            width: 60px;
+            height: 70px;
+        }
+        .item1{
+            
+            justify-content: space-around; 
+            background-color: rgb(255, 255, 255);
+            padding: 5px;
+            border-radius: 15px;
+            margin: 10px;
+
+        }
+        .item2 {
+            
+            background-color: rgb(255, 255, 255);
+            padding: 2px;
+            border-radius: 5px;
+            }
+
+        h1 {
+            font-size: 70%; /* Título más pequeño para que no se corte */
+            padding: 1px;
+        }
+
+        h2 {
+            font-size: 70%;
+            
+        }
+        p{
+            font-size: 50%;
+        }
+
+        /* 6. Newsletter en Móvil */
+        .LEONS-form input, 
+        .LEONS-form button {
+            width: 100%; /* Inputs a lo ancho de la pantalla */
+        }
+
+        .social-icons {
+            gap: 30px; /* Más espacio entre iconos para que sea fácil tocarlos */
+        }
+    }
+        
