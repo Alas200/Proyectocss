@@ -448,22 +448,6 @@ p {
             width: 100%; /* Botones de ancho completo para facilitar el clic */
         }
 
-        /* 3. Contenedores Flex (Forzar columna única) */
-        
-        
-        .footer-top,
-        .footer-bottom {
-            display: flex;
-            flex-direction: column; /* Todo en vertical */
-            align-items: center;
-            text-align: center;
-            padding: 15px; /* Menos relleno */
-            gap: 15px;
-            margin: 10px 0;
-            display: flex;              /* Activa Flexbox */
-            flex-wrap: wrap;
-        }
-
         .flex-container{
             
             display: flex;
@@ -546,17 +530,116 @@ p {
         p{
             font-size: 70%;
         }
-
-        /* 6. Newsletter en Móvil */
-        .LEONS-form input, 
-        .LEONS-form button {
-            width: 100%; /* Inputs a lo ancho de la pantalla */
-        }
-
-        .social-icons {
-            gap: 30px; /* Más espacio entre iconos para que sea fácil tocarlos */
-        }
     
+    
+.main-footer {
+  background-color: #0a0a0a;
+  color: #ffffff;
+  padding: 50px 8%;
+  border-radius: 10px;
+}
+
+/* --- SECCIÓN SUPERIOR --- */
+.footer-top {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.footer-col {
+  flex: 1; /* Todas las columnas crecen igual */
+  min-width: 150px;
+}
+
+.footer-col h3 {
+  color: #7e7b7b;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+
+.footer-col p {
+  line-height: 1.6;
+  color: #ccc;
+  font-size: 0.9rem;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+/* Newsletter */
+.LEONS-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.LEONS-form input {
+  padding: 12px;
+  border-radius: 4px;
+  border: none;
+}
+
+.LEONS-form button {
+  background-color: #545353;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+/* --- SECCIÓN INFERIOR --- */
+.footer-divider {
+  border: 0;
+  border-top: 1px solid #222;
+  border-radius: 5px;
+  margin: 25px 0;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.contact-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.contact-item .icon {
+  font-size: 1.5rem;
+}
+
+.contact-item p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #ccc;
+}
 
 /* Media Query para móviles pequeños (320px x 704px) */
 @media (max-width: 430px) {
@@ -653,12 +736,6 @@ p {
             margin-top: 2px;
 
         }
-        .footer-col {
-            width: 100%; /* Que ocupen todo el ancho disponible */
-            min-width: 0; /* Reseteamos el min-width anterior */
-            margin: 0;
-            padding: 10px;
-        } 
 
         /* 5. Imágenes y Títulos */
         .imagen1
@@ -696,14 +773,115 @@ p {
             font-size: 70%;
         }
 
-        /* 6. Newsletter en Móvil */
-        .LEONS-form input, 
+        
+        .main-footer {
+        background-color: #0a0a0a;
+        color: #ffffff;
+        padding: 10px 8%;
+        border-radius: 2px;
+        }
+
+        /* --- SECCIÓN SUPERIOR --- */
+        .footer-top {
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: space-between;
+        gap: 5px;
+        }
+
+        .footer-col {
+        flex: 1; /* Todas las columnas crecen igual */
+        min-width: 10px;
+        }
+
+        .footer-col h3 {
+        color: #7e7b7b;
+        margin-bottom: 5px;
+        font-size: .7rem;
+        }
+
+        .footer-col p {
+        line-height: 1.6;
+        color: #ccc;
+        font-size: 0.4rem;
+        }
+
+        .footer-col ul {
+        list-style: none;
+        padding: 0;
+        font-size: 0.4rem;
+        }
+
+        .footer-col ul li {
+        margin-bottom: 5px;
+        }
+
+        .footer-col ul li a {
+        color: #ccc;
+        text-decoration: none;
+        font-size: 0.4rem;
+        }
+
+        /* Newsletter */
+        .LEONS-form {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        }
+
+        .LEONS-form input {
+        padding: 12px;
+        border-radius: 4px;
+        border: none;
+        }
+
         .LEONS-form button {
-            width: 100%; /* Inputs a lo ancho de la pantalla */
+        background-color: #545353;
+        color: white;
+        border: none;
+        padding: 12px;
+        border-radius: 4px;
+        font-weight: bold;
+        cursor: pointer;
         }
 
         .social-icons {
-            gap: 30px; /* Más espacio entre iconos para que sea fácil tocarlos */
+        display: flex;
+        gap: 5px;
+        margin-top: 2px;
+        justify-content: center;
+        }
+
+        /* --- SECCIÓN INFERIOR --- */
+        .footer-divider {
+        border: 0;
+        border-top: 1px solid #222;
+        border-radius: 5px;
+        margin: 5px 0;
+        }
+
+        .footer-bottom {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 5px;
+        }
+
+        .contact-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2px;
+        }
+
+        .contact-item .icon {
+        font-size: .7rem;
+        }
+
+        .contact-item p {
+        margin: 0;
+        font-size: 0.4rem;
+        color: #ccc;
         }
     }
 
@@ -739,20 +917,6 @@ p {
         }
 
         /* 3. Contenedores Flex (Forzar columna única) */
-        
-        
-        .footer-top,
-        .footer-bottom {
-            display: flex;
-            flex-direction: column; /* Todo en vertical */
-            align-items: center;
-            text-align: center;
-            padding: 15px; /* Menos relleno */
-            gap: 15px;
-            margin: 10px 0;
-            display: flex;              /* Activa Flexbox */
-            flex-wrap: wrap;
-        }
 
          .flex-container{
             
@@ -801,12 +965,6 @@ p {
             margin-top: 5px;
 
         }
-        .footer-col {
-            width: 100%; /* Que ocupen todo el ancho disponible */
-            min-width: 0; /* Reseteamos el min-width anterior */
-            margin: 0;
-            padding: 10px;
-        } 
 
         /* 5. Imágenes y Títulos */
         .imagen1
@@ -848,14 +1006,115 @@ p {
             font-size: 50%;
         }
 
-        /* 6. Newsletter en Móvil */
-        .LEONS-form input, 
+        .main-footer {
+        background-color: #0a0a0a;
+        color: #ffffff;
+        padding: 10px 8%;
+        border-radius: 2px;
+        }
+
+        /* --- SECCIÓN SUPERIOR --- */
+        .footer-top {
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: space-between;
+        gap: 5px;
+        }
+
+        .footer-col {
+        flex: 1; /* Todas las columnas crecen igual */
+        min-width: 10px;
+        }
+
+        .footer-col h3 {
+        color: #7e7b7b;
+        margin-bottom: 5px;
+        font-size: .7rem;
+        }
+
+        .footer-col p {
+        line-height: 1.6;
+        color: #ccc;
+        font-size: 0.4rem;
+        }
+
+        .footer-col ul {
+        list-style: none;
+        padding: 0;
+        font-size: 0.4rem;
+        }
+
+        .footer-col ul li {
+        margin-bottom: 5px;
+        }
+
+        .footer-col ul li a {
+        color: #ccc;
+        text-decoration: none;
+        font-size: 0.4rem;
+        }
+
+        /* Newsletter */
+        .LEONS-form {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        }
+
+        .LEONS-form input {
+        padding: 12px;
+        border-radius: 4px;
+        border: none;
+        }
+
         .LEONS-form button {
-            width: 100%; /* Inputs a lo ancho de la pantalla */
+        background-color: #545353;
+        color: white;
+        border: none;
+        padding: 12px;
+        border-radius: 4px;
+        font-weight: bold;
+        cursor: pointer;
         }
 
         .social-icons {
-            gap: 30px; /* Más espacio entre iconos para que sea fácil tocarlos */
+        display: flex;
+        gap: 5px;
+        margin-top: 2px;
+        justify-content: center;
+        }
+
+        /* --- SECCIÓN INFERIOR --- */
+        .footer-divider {
+        border: 0;
+        border-top: 1px solid #222;
+        border-radius: 5px;
+        margin: 5px 0;
+        }
+
+        .footer-bottom {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 5px;
+        }
+
+        .contact-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2px;
+        }
+
+        .contact-item .icon {
+        font-size: .7rem;
+        }
+
+        .contact-item p {
+        margin: 0;
+        font-size: 0.4rem;
+        color: #ccc;
         }
     }
+    
         
