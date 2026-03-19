@@ -31,7 +31,7 @@
 
     .lista{
         padding: 20px;
-        margin: 30px;
+        margin: 5px;
         font-size: 40px;
         color: #000000;
     }
@@ -227,7 +227,7 @@
     .lista{
         padding: 10px;
         margin: 15px;
-        font-size: 20px;
+        font-size: 0px;
         color: #000000;
     }
 
